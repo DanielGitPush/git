@@ -1,0 +1,142 @@
+/* Eude */
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+footer {
+    margin-top: auto;
+}
+
+a {
+    text-decoration: underline;
+    color: rgb(123, 123, 123);
+}
+
+a:hover {
+    color: black;
+}
+
+article{
+    display:flex;
+    justify-content: center;
+}
+article a{
+    text-decoration: none;
+    transition: all, 0.80s ease-in-out;
+}
+article a:hover{
+  transform: scale(0.975);
+
+}
+
+figure{
+    width: 50rem;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.300);
+   
+}
+
+
+/*Daniel*/
+::-wepkit-scrollbar-track{
+    background-color: #fff;
+  }
+  
+  ::-webkit-scrollbar{
+    width: 6px;
+    background: #fff;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background: #ec7676;
+    border-radius: 50px;
+  }
+  
+  .postlink{
+    text-decoration: none;
+  }
+
+
+
+.scroll-button {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ec7676;
+  color: #fff;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.top-button {
+  top: 50px;
+  right: 50px;
+}
+
+.bottom-button {
+  bottom: 50px;
+  right: 50px;
+}
+
+.scroll-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+/* Teste*/
+
+ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+ul li {
+  position: relative;
+  list-style: none;
+}
+ul li a {
+  font-size: 4em;
+  text-decoration: none;
+  letter-spacing: 2px;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: transparent;
+ 
+}
+ul li a::before {
+  content: attr(data-text);
+  position: absolute;
+  color: var(--clr);
+  width: 0;
+  overflow: hidden;
+  transition: 1s;
+  border-right: 2px solid var(--clr);
+  -webkit-text-stroke: 1px var(--clr);
+}
+ul li a:hover::before {
+  width: 100%;
+  filter: drop-shadow(0 0 25px var(--clr))
+}
+
+
+
+nav ,.identific {
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.300);
+}
+
+.fot{
+  box-shadow: 0 6px 12px 12px rgba(0, 0, 0, 0.300);
+}
