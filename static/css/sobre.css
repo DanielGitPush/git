@@ -3,9 +3,7 @@
   .container {
 
 
-    max-height: 800px;
-    max-width: 1280px;
-    min-height: 600px;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
