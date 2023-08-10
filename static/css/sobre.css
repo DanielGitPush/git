@@ -59,12 +59,12 @@
   }
   
   .card1 {
-    background: url("https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg")
+    background: url("../img/pedro.jpeg")
       center center no-repeat;
     background-size: 300px;
   }
   .card1:hover {
-    background: url("https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg")
+    background: url("../img/pedro.jpeg")
       left center no-repeat;
     background-size: 600px;
   }
@@ -76,12 +76,12 @@
   }
   
   .card2 {
-    background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg")
+    background: url("../img/eude.jpeg")
       center center no-repeat;
     background-size: 300px;
   }
   .card2:hover {
-    background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg")
+    background: url("../img/eude.jpeg")
       left center no-repeat;
     background-size: 600px;
   }
@@ -92,6 +92,25 @@
     opacity: 1;
   }
   
+  .card3 {
+    background: url("../img/eude2.jpeg")
+      center center no-repeat;
+    background-size: 300px;
+  }
+  .card3:hover {
+    background: url("../img/eude.jpeg")
+      left center no-repeat;
+    background-size: 600px;
+  }
+  .card3:hover h2 {
+    opacity: 1;
+  }
+  .card3:hover .fa {
+    opacity: 1;
+  }
+
+
+
   h2 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #fff;
