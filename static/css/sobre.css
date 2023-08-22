@@ -93,12 +93,12 @@
   }
   
   .card3 {
-    background: url("../img/eude2.jpeg")
+    background: url("")
       center center no-repeat;
     background-size: 300px;
   }
   .card3:hover {
-    background: url("../img/eude.jpeg")
+    background: url("")
       left center no-repeat;
     background-size: 600px;
   }
