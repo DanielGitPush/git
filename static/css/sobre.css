@@ -82,12 +82,12 @@
   }
   
   .card2 {
-    background: url("../img/eude.jpeg")
+    background: url("../img/Eduardoicon.jpg")
       center center no-repeat;
-    background-size: 300px;
+    background-size: 400px;
   }
   .card2:hover {
-    background: url("../img/eude.jpeg")
+    background: url("../img/Eduardoicon.jpg")
       left center no-repeat;
     background-size: 600px;
   }
@@ -99,12 +99,12 @@
   }
   
   .card3 {
-    background: url("")
+    background: url("../img/WendrelIcon.jpg")
       center center no-repeat;
     background-size: 300px;
   }
   .card3:hover {
-    background: url("")
+    background: url("../img/WendrelIcon.jpg")
       left center no-repeat;
     background-size: 600px;
   }
