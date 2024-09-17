@@ -1,71 +1,33 @@
-/* Estilo geral e configuração de layout */
-
-/* Garantir que a altura do html e body seja de 100% */
-html,
-body {
-    margin: 0;
+/* Eude */
+html {
     height: 100%;
+    min-height: 100%;
 }
 
-/* Corpo da página */
+.container {
+
+
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+
+
 body {
     display: flex;
     flex-direction: column;
-    font-family: Arial, sans-serif; /* Adicione uma fonte padrão para o corpo */
+    min-height: 100%;
 }
 
-/* Container de artigos */
-.container {
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-/* Artigos individuais */
-article {
-    display: flex;
-    width: 60vw;
-    justify-content: center;
-    margin: auto;
-}
-
-/* Links de artigos */
-article a {
-    text-decoration: none;
-    transition: transform 0.8s ease-in-out;
-}
-
-article a:hover {
-    transform: scale(0.975);
-}
-
-/* Estilo para figuras */
-figure {
-    width: 100%;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-/* Imagens de postagens */
-.card-img-top {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-}
-
-/* Estilo para elementos de identificação */
-.identific {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-/* Rodapé */
 footer {
     margin-top: auto;
 }
 
-/* Estilo de links */
 a {
     text-decoration: underline;
     color: rgb(123, 123, 123);
@@ -75,104 +37,120 @@ a:hover {
     color: black;
 }
 
-/* Navegação */
-nav {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+article{
+    display:flex;
+    justify-content: center;
 }
-
-/* Listas com animação de texto */
-ul {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-}
-
-ul li {
-    position: relative;
-    list-style: none;
-}
-
-ul li a {
-    font-size: 4em;
+article a{
     text-decoration: none;
-    letter-spacing: 2px;
-    line-height: 1em;
-    text-transform: uppercase;
-    color: transparent;
+    transition: all, 0.80s ease-in-out;
+}
+article a:hover{
+  transform: scale(0.975);
+
 }
 
-ul li a::before {
-    content: attr(data-text);
-    position: absolute;
-    color: var(--clr);
-    width: 0;
-    overflow: hidden;
-    transition: width 1s, filter 1s;
-    border-right: 2px solid var(--clr);
-    -webkit-text-stroke: 1px var(--clr);
+figure{
+    width: 50rem;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.300);
+   
 }
 
-ul li a:hover::before {
-    width: 100%;
-    filter: drop-shadow(0 0 25px var(--clr));
-}
 
-/* Botões de rolagem */
+/*Daniel*/
+::-wepkit-scrollbar-track{
+    background-color: #fff;
+  }
+  
+  ::-webkit-scrollbar{
+    width: 6px;
+    background: #fff;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background: #ec7676;
+    border-radius: 50px;
+  }
+  
+  .postlink{
+    text-decoration: none;
+  }
+
+
+
 .scroll-button {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #ec7676;
-    color: #fff;
-    font-size: 24px;
-    line-height: 50px;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ec7676;
+  color: #fff;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .top-button {
-    top: 50px;
-    right: 50px;
+  top: 50px;
+  right: 50px;
 }
 
 .bottom-button {
-    bottom: 50px;
-    right: 50px;
+  bottom: 50px;
+  right: 50px;
 }
 
 .scroll-button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
-/* Estilo do scrollbar */
-::-webkit-scrollbar-track {
-    background-color: #fff;
+
+
+
+/* Teste*/
+
+ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+ul li {
+  position: relative;
+  list-style: none;
+}
+ul li a {
+  font-size: 4em;
+  text-decoration: none;
+  letter-spacing: 2px;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: transparent;
+ 
+}
+ul li a::before {
+  content: attr(data-text);
+  position: absolute;
+  color: var(--clr);
+  width: 0;
+  overflow: hidden;
+  transition: 1s;
+  border-right: 2px solid var(--clr);
+  -webkit-text-stroke: 1px var(--clr);
+}
+ul li a:hover::before {
+  width: 100%;
+  filter: drop-shadow(0 0 25px var(--clr))
 }
 
-::-webkit-scrollbar {
-    width: 6px;
-    background: #fff;
+
+
+nav ,.identific {
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.300);
 }
 
-::-webkit-scrollbar-thumb {
-    background: #ec7676;
-    border-radius: 50px;
-}
-
-/* Conteúdo principal */
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-}
-
-object {
-    width: 100%;
-    height: 1500px;
+.fot{
+  box-shadow: 0 6px 12px 12px rgba(0, 0, 0, 0.300);
 }
