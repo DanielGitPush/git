@@ -1,29 +1,30 @@
 <!--Links de estilização-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 <link href="../../static/css/style.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
 
-
-<article class="container mt-5 mb-5">
+<article class="grid h-full rounded-lg">
 	<a href="nomepost.html" target="_blank" rel="noopener noreferrer">
-		<figure class="card mb-3">
-				<img src="imgpost.jpg" class="card-img-top">
-				<figcaption class="card-body">
-						<h5 class="cardtitle">A Tecnologia na vida humana</h5>
-						<p class="card-text">
-							O desenvolvimento da tecnologia emerge os seres humanos num universo cada vez mais desconhecido e que continua a crescer. O livre acesso aos meios tecnológicos determina a proximidade entre as diferentes áreas do conhecimento, o que acaba por juntar novas realidades e construir novas relações interdisciplinares. E fica assim a dúvida geral se esse avanço tecnológico acabará por demonstrar se a convergência dos meios tecnológicos e a formação dessas redes de conhecimento visualizadas atualmente,  tenderá mais para a promoção da integração social ou  servirá apenas para o distanciamento das relações humanas e tendendo somente para meios comerciais sem se importar em como isso afetará a sociedade.
-						</p>
-						<p class="card-text"><small class="text-muted">21 de Setembro de 2023</small></p>
-
-						<div class="card py-2 px-4 m-3  identific">
-							<div class="row g-0 aling-items-center">
-								<div class="col-md-2">
-									<img src="foto.gif" alt="" class="rounded-circle w-50">
-								</div>
-								<div class="col-md-10"><div class="card-body"><p class="card-text "><strong>Antonio Lorencini</strong></p></div></div>
-							</div>
-						</div>
-				</figcaption>
-		</figure>
+		<img src="imgpost.jpg" class="object-cover w-full rounded-lg" style="height: 500px;">
+		<figcaption class="flex flex-col gap-3 p-3">
+			<h5 class="flex-grow text-xl font-bold">A Tecnologia na vida humana</h5>
+			<p class="flex-grow w-full h-56 overflow-y-scroll">
+				O desenvolvimento da tecnologia emerge os seres humanos num universo cada vez mais
+				desconhecido e que continua a crescer. O livre acesso aos meios tecnológicos determina a
+				proximidade entre as diferentes áreas do conhecimento, o que acaba por juntar novas
+				realidades e construir novas relações interdisciplinares. E fica assim a dúvida geral se
+				esse avanço tecnológico acabará por demonstrar se a convergência dos meios tecnológicos
+				e a formação dessas redes de conhecimento visualizadas atualmente, tenderá mais para a
+				promoção da integração social ou servirá apenas para o distanciamento das relações
+				humanas e tendendo somente para meios comerciais sem se importar em como isso afetará a
+				sociedade.
+			</p>
+			<p class="flex-grow"><small class="flex-grow text-gray-600">21 de Setembro de 2023</small>
+			</p>
+			<div class="flex flex-grow w-full gap-3 px-4 py-2 border rounded shadow-sm full">
+				<img src="foto.gif" alt="" class="w-12 rounded-full ">
+				<p class="my-auto"><strong>Antonio Lorencini</strong></p>
+			</div>
+			</div>
+		</figcaption>
 	</a>
 </article>
